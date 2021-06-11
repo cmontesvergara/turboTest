@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Carousel from './components/Carousel/Carousel';
+//importo el componente NavBar
+import Nbar from './components/Nbar/Nbar'
+import slide1 from './img/Blue_car.jpg';
+import React from 'react';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Nbar></Nbar>
+      <Carousel slide={slide1}></Carousel>
+    </React.Fragment>
+    
   );
 }
 

@@ -1,0 +1,33 @@
+.carousel{
+    height: 100vh;
+    width: 100%;
+}
+.slideCarousel .swiper-slide{
+    width: 90vw;
+}
+.swiper-pagination{
+    color: white;
+}
+@media (max-width: 600px) {
+    .swiper-slide{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+.slideContent{
+    position: relative;
+    background-image: url(../../img/Blue_car.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+.slideBody{
+    box-sizing: border-box;
+    position: absolute;
+    
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+}
+h2{
+    color: #ffffff;
+}
