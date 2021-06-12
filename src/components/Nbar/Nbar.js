@@ -18,7 +18,7 @@ class Nbar extends React.Component {
     const burgermenu = document.getElementById("menuContent");
     const nbar = document.getElementById("Nbar");
     
-    if(this.state.activado==false){
+    if(this.state.activado===false){
       this.setState({activado: true});
       burgermenu.style.display = 'flex'; 
       nbar.style.display = 'none'; 
@@ -43,23 +43,23 @@ class Nbar extends React.Component {
             <a  href='/'><img  id='logo' alt='logo'></img></a>
             
           </div>
-          <div>
+          <div className='links'>
             <a className='itemNbar' href='/' alt='numero de contacto'>+34 722 73 9622</a>
             <a id='itemContacto' className='itemNbar' href='/' alt='apartado contacto'>Contacto</a>
-            <img id='burgerMenu' onClick={this.handleClick}></img>
+            <img id='burgerMenu' onClick={this.handleClick} alt='iconbutton'></img>
           </div>
         </nav>
         <div id='menuContent' className='menuContent'>
           <div className='menu'>
             <div className='miniBar'>
-              <a><img src={logo}></img></a>              
-              <button className='closeMenu' onClick={this.handleClick}><img src={closed}></img>
+              <img src={logo} alt='icono'></img>              
+              <button className='closeMenu' onClick={this.handleClick}><img src={closed} alt='icon button' ></img>
               </button>
             </div>
-            <a className='itemMenu activo'>Home</a>
-            <a className='itemMenu'>Recomendaciones</a>
-            <a className='itemMenu'>La Agencia</a>
-            <a className='itemMenu'>Contacto</a>
+            <a className='itemMenu activo' href='/' alt='itemlink'>Home</a>
+            <a className='itemMenu' href='/' alt='itemlink'>Recomendaciones</a>
+            <a className='itemMenu' href='/' alt='itemlink'>La Agencia</a>
+            <a className='itemMenu' href='/' alt='itemlink'>Contacto</a>
 
           </div>
 

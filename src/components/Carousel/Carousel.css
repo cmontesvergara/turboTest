@@ -8,12 +8,28 @@
 .swiper-pagination{
     color: white;
 }
+.swiper-button-next{
+    content: url(/src/Icons/arrow-right.svg);
+    top:95%;
+    left: 53%;
+}
+.swiper-button-prev{
+    content: url(/src/Icons/arrow-left.svg);
+    top:95%;
+    right: 53%;
+}
+.swiper-pagination{
+    transform: translateY(-16px);
+    font-size: 12px;
+}
+
 @media (max-width: 600px) {
     .swiper-slide{
         transform: translate3d(0px,0px,0px);
     }
 }
 .slideContent{
+    
     position: relative;
     background-image: url(../../img/Blue_car.jpg);
     width: 100vw;
@@ -22,12 +38,53 @@
 .slideBody{
     box-sizing: border-box;
     position: absolute;
-    
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
+    top: 60%;  
+    left: 50%; 
     transform: translate(-50%, -50%);
+    width: 580px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h2,h3{
+    color: #ffffff;
+    text-align: center;
+    
 }
 h2{
-    color: #ffffff;
+    font-size: 40px;
+    
+}
+h3{
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+}
+.btnContactanos{
+    
+    border-radius: 5px;
+    background-color: #3552A6 ;
+    width: 166px;
+    height: 43px;
+    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.btnContactanos:hover{
+    text-decoration: underline;
+}
+#arrowRigth{   
+    content: url(/src/Icons/arrow.svg)  ;
+    
+    float: right;
+    width: 13px;
+    right: 13px;
+    
 }

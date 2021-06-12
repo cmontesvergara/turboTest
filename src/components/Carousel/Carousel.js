@@ -26,19 +26,25 @@ class Carousel extends React.Component {
                     <div className='slideContent'>
                         <div className='slideBody'>
                             <h2>Are you ready for the truth?</h2>
-                        </div>
-                        <img src={this.props.slide} alt='slideshow'></img>
-                    </div>   
-                    
-                </SwiperSlide>
-                
-                <SwiperSlide className="slideCarousel">
-                    <img src={this.props.slide} alt='slideshow'></img>
+                            <h3>Well, the way they make shows is, they make one show. That show's called a pilot.</h3>
+                            <button className='btnContactanos'>Contáctanos<img id='arrowRigth' alt='iconbutton'></img></button>
+                        </div>                        
+                    </div>                    
                 </SwiperSlide>
 
-                <SwiperSlide className="slideCarousel">
-                    <img src={this.props.slide} alt='slideshow'></img>
+                <SwiperSlide className="slideCarousel" >
+                    <div className='slideContent'>
+                        <div className='slideBody'>
+                            <h2>Are you ready for the truth?</h2>
+                            <h3>Well, the way they make shows is, they make one show. That show's called a pilot.</h3>
+                            <button className='btnContactanos'>Contáctanos<img id='arrowRigth' alt='iconbutton'></img></button>
+                        </div>                        
+                    </div>                    
                 </SwiperSlide>
+
+                
+                
+                
                 
             </Swiper>
         </React.Fragment>
