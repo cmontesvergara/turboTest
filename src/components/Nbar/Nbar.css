@@ -92,23 +92,28 @@
     color: #ffffff;
 }
 @media (max-width: 600px) {
+    .Nbar{
+        transform: translateY(30px);
+        padding-right: 10px;
+        padding-left: 30px;
+    }
     #logo{
         display: flex;
-        content: url(/src/Logo/Simbolo.svg);
-        padding-top: 30%;
-        padding-left: 30%;
-        transform: scale(1);
+        content: url(/src/Logo/Simbolo.svg);  
+        height: 80%;
+        width: 80%;
     }
     .itemNbar{
         display: none;
     }
     #burgerMenu{
-        margin: 10% 10px 0px 10px;
+        margin-right: 30px;
         cursor: pointer;
         content: url(/src/Icons/Burguer\ Menu.svg);
-        transform: scale(1);
-        transform: translateY(10px);
-        margin-right: 30px;
+        transform: scale(1.5);
+        
+        
+        
     }
     .menu{
         padding-top: 20px;

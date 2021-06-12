@@ -17,17 +17,14 @@
     content: url(/src/Icons/arrow-left.svg);
     top:95%;
     right: 53%;
+    left: auto;
 }
 .swiper-pagination{
     transform: translateY(-16px);
     font-size: 12px;
 }
 
-@media (max-width: 600px) {
-    .swiper-slide{
-        transform: translate3d(0px,0px,0px);
-    }
-}
+
 .slideContent{
     
     position: relative;
@@ -87,4 +84,50 @@ h3{
     width: 13px;
     right: 13px;
     
+}
+@media (max-width: 600px) {
+    .carousel{
+        height: 90vh;
+        width: 100%;
+    }
+    .slideBody{
+        top: 45%;  
+        width: 100vw;
+        height: max-content;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    h3{
+        width: 100%;
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .btnContactanos{
+        margin-top: 40px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .itemMenu{
+        font-size: 20px;
+    }
+    .swiper-button-next{
+        content: url(/src/Icons/arrow-right.svg);
+        top:93%;
+        left: 56%;
+    }
+    .swiper-button-prev{
+        content: url(/src/Icons/arrow-left.svg);
+        top:93%;
+        right: 56%;
+        left: auto;
+    }
+    .swiper-pagination{
+        transform: translateY(-28px);
+        font-size: 16px;
+    }
+    .slideContent{
+        background-position: 120vh 0vw;
+    }
 }
