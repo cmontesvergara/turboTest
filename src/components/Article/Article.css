@@ -1,0 +1,69 @@
+.container-article{
+    display: flex;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 100px;
+}
+
+.main-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.main-article__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.main-article__text h2{
+    color: #17284F;
+    font-weight: 500;
+    font-size: 24px;
+}
+.main-article__text p{
+    color:  #7F7F80;
+    width: 95%;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.main-article__image img{
+    display: flex; 
+    height: 60vh;
+    width: 100%;
+    
+}
+.main-article__text .btnContactanos{
+    width: 130px;
+    height: 35px;
+}
+
+@media (max-width: 600px) {
+    .container-article{
+        padding: 0;
+    }
+    .main-article{
+        grid-template-columns: 1fr;
+      
+    }
+    .main-article__image img{
+        
+        height: 40vh;
+        
+        
+    }
+    .main-article__text{
+       padding: 0% 5% 20% 5%;
+    }
+    .main-article__text p{
+        width: 100%;
+        
+    
+    }
+}

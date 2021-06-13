@@ -1,0 +1,16 @@
+#textArticleInverteded{
+    order: 2;
+    margin-left: 40px;
+}
+#imgArticleInverteded{
+    order: 1;
+}
+@media (max-width: 600px){
+    #textArticleInverteded{
+        order: 1;
+       
+    }
+    #imgArticleInverteded{
+        order: 2;
+    }
+}
