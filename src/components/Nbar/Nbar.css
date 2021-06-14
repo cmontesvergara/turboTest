@@ -7,11 +7,10 @@
     padding: 0px;
 }
 .Nbar{
-    
     z-index: 10;
     display:flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     align-items: center;
     width: 100%;
     transform: translateY(50px);
@@ -51,17 +50,19 @@
 .menuContent{
     
     display: none;
-   
     justify-content: flex-end;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #17284F;
+    
 }
+
 
 .miniBar{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    
 }
 .menu{
     display: flex;
@@ -70,6 +71,8 @@
     justify-items: flex-end;
     background-color: #2F52A0;
     padding: 40px;
+    
+
 }
 .closeMenu{
     display: flex;

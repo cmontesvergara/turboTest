@@ -21,7 +21,7 @@ class Carousel extends React.Component {
     return (
         <React.Fragment>
             
-            <Swiper pagination={{"type": "fraction"}} navigation={true} className="carousel" >
+            <Swiper pagination={{"type": "fraction"}} navigation={true} id='carousel' className="carousel" >
                 <SwiperSlide className="slideCarousel" >
                     <div className='slideContent'>
                         <div className='slideBody'>
