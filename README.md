@@ -5,7 +5,7 @@ Este proyecto ha sido creado como prueba de aptitud para bukyapp.com
 ## Prueba la pp online
 https://tulip-global-random.glitch.me/
 
-## Available Scripts
+## Scripts Validos
 
 en el directorio del proyecto puede ejecutar los siguientes scripts
 
