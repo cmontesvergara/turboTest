@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nbar.css';
-import logo from '../../Logo/Simbolo.svg'
-import closed from '../../Icons/plus-closed.svg'
+import logo from '../../Logo/Simbolo.svg';
+import closed from '../../Icons/plus-closed.svg';
 
 
 
@@ -12,15 +12,13 @@ class Nbar extends React.Component {
 
     // Este enlace es necesario para hacer que `this` funcione en el callback
     this.handleClick = this.handleClick.bind(this);
-    this.handleH = this.handleH.bind(this);
-  }
-  handleH(event){
-    
     
     
     
   }
+ 
   handleClick() {
+    
     const burgermenu = document.getElementById("menuContent");
     const logoContent = document.getElementById("logoContent");
     const links = document.getElementById("links");
@@ -34,6 +32,8 @@ class Nbar extends React.Component {
       Nbar.style.paddingLeft = '0px'
       Nbar.style.paddingRight = '0px'
       Nbar.style.transform ='translateY(0px)';
+      
+      setTimeout(this.handleClick, 4000);
       
 
     }else{
@@ -51,6 +51,9 @@ class Nbar extends React.Component {
   
 
   render() {
+
+
+
     return (
       // eslint-disable-next-line
       <React.Fragment>
@@ -66,7 +69,7 @@ class Nbar extends React.Component {
           </div>
         
         <div id='menuContent' className='menuContent' >
-          <div className='menu' onMouseOut={this.handleH}>
+          <div className='menu' >
             <div className='miniBar'>
               <img src={logo} alt='icono'></img>   
                          

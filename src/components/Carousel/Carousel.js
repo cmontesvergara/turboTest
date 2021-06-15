@@ -42,6 +42,16 @@ class Carousel extends React.Component {
                     </div>                    
                 </SwiperSlide>
 
+                <SwiperSlide className="slideCarousel" >
+                    <div className='slideContent'>
+                        <div className='slideBody'>
+                            <h2>Are you ready for the truth?</h2>
+                            <h3>Well, the way they make shows is, they make one show. That show's called a pilot.</h3>
+                            <button className='btnContactanos'>Contáctanos<img id='arrowRigth' alt='iconbutton'></img></button>
+                        </div>                        
+                    </div>                    
+                </SwiperSlide>
+
                 
                 
                 

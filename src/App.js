@@ -17,8 +17,8 @@ function App() {
   
   return (
     <React.Fragment>
-      <Nbar></Nbar>
-      <Carousel ></Carousel>
+      <Nbar/>
+      <Carousel />
       <Bodynav/>
       <Textintro/>    
       <Gallery/>
